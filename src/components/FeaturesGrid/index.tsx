@@ -32,7 +32,7 @@ export function FeaturesGrid() {
     ] 
 
     return (
-        <div className="max-w-full flex flex-col mx-auto bg-white rounded-lg p-8">
+        <div className="max-w-full flex flex-col mx-auto bg-white rounded-lg p-8" id="features">
           <div className="max-w-7xl self-center grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map(feature => {
                 return (

@@ -76,7 +76,7 @@ export const Header = ({ scrollY, emailInputRef }: { scrollY: number, emailInput
         scrollY > 50 ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}>
         <div className="max-w-6xl mx-auto px-8 py-4 relative">
-          <div className="flex justify-between items-center items-start">
+          <div className="flex justify-between items-center">
             {/* Logo que pode crescer */}
             <div className="flex-shrink-0">
                 <img 
@@ -90,12 +90,12 @@ export const Header = ({ scrollY, emailInputRef }: { scrollY: number, emailInput
             <div className="hidden md:flex items-center font-[Roboto] cursor-pointer space-x-10 text-neutral-800 self-center">
               <a className='relative bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text hover:text-transparent transition-all ease-in-out duration-200 after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-200 after:to-blue-600 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0' onClick={() => document.getElementById("hero-section")?.scrollIntoView({ behavior: 'smooth' })}>Sobre nós</a>
               <a className='relative bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text hover:text-transparent transition-all ease-in-out duration-200 after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-200 after:to-blue-600 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0' onClick={() => document.getElementById("scroll-cards")?.scrollIntoView({ behavior: 'smooth' })}>Recursos</a>
-              <a className='relative bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text hover:text-transparent transition-all ease-in-out duration-200 after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-200 after:to-blue-600 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0'>Premium</a>
-              <a className='relative bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text hover:text-transparent transition-all ease-in-out duration-200 after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-200 after:to-blue-600 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0'>Nossa missão</a>
+              <a className='relative bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text hover:text-transparent transition-all ease-in-out duration-200 after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-200 after:to-blue-600 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0' onClick={() => document.getElementById("premium")?.scrollIntoView({ behavior: 'smooth' })}>Premium</a>
+              <a className='relative bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text hover:text-transparent transition-all ease-in-out duration-200 after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-200 after:to-blue-600 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0' onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: 'smooth' })}>Nossa missão</a>
             </div>
             
             {/* Botão fixo no topo direito */}
-            <div className="flex items-center space-x-4 pt-2">
+            <div className="flex items-center space-x-4">
               <SpecialButton onClick={handleClick} text="Teste gratuito" />
             </div>
           </div>

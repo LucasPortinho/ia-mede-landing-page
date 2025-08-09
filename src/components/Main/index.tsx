@@ -1,8 +1,6 @@
 import { useState } from "react"
 import AppleLogo from '../../assets/apple-logo.svg'
 import GooglePlayLogo from '../../assets/google-play-store-logo.svg'
-import DataSvg from '../../assets/bg-cellphone-3.svg'
-import CellphoneSvg from '../../assets/bg-cellphone-2.svg'
 import { z } from 'zod'
 import sanitizeHtml from 'sanitize-html';
 import { toast } from 'react-toastify'
@@ -33,11 +31,9 @@ export const MainSection = ({ inputRef }: { inputRef: React.RefObject<HTMLInputE
       if (data) {
         try {
           toast.info('Salvando e-mail...')
-          const response = await axios.post(import.meta.env.VITE_API_ROUTE, { email: data.email })
+          await axios.post(import.meta.env.VITE_API_ROUTE, { email: data.email })
           toast.dismiss()
           toast.success('Email salvo com sucesso')
-          console.log(response)
-          e.currentTarget.reset()
         }
         catch (e) {
           toast.error('Erro ao salvar e-mail')
@@ -50,10 +46,8 @@ export const MainSection = ({ inputRef }: { inputRef: React.RefObject<HTMLInputE
     <>
         <div className="max-w-full mx-auto bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 py-12 sm:py-16 lg:py-20" id="hero-section">
 
-        <div className="flex flex-col lg:flex-row items-center bg-gray-100 rounded-xl p-4 sm:p-6 lg:p-0">
-          <div className="hidden lg:block relative">
-            <img src={CellphoneSvg} style={{ height: 430, width: 500 }} />
-          </div>
+        <div className="flex flex-col lg:flex-row items-center bg-gray-100 rounded-xl p-4 sm:p-6 lg:p-4">
+
           
           {/* Center - Content */}
           <div className="flex-1 space-y-3 sm:space-y-4 flex flex-col text-center items-center px-4">
@@ -86,9 +80,6 @@ export const MainSection = ({ inputRef }: { inputRef: React.RefObject<HTMLInputE
             </div>
           </div>
 
-          <div className="hidden lg:block relative">
-            <img src={DataSvg} style={{ width: 500, height: 500 }} />
-          </div>
         </div>
 
         <div className="mt-12 sm:mt-16 text-center px-4">
@@ -97,7 +88,7 @@ export const MainSection = ({ inputRef }: { inputRef: React.RefObject<HTMLInputE
               Quer utilizar nossa inteligência artificial de forma gratuita?
             </h2>
             <span className='text-gray-600 text-sm sm:text-base mt-2'>
-              Cadastre-se abaixo para testa-la gratuitamente antes de todo mundo
+              Cadastre-se abaixo para ganhar 1 mês de acesso premium gratuito
             </span>
           </div>
           

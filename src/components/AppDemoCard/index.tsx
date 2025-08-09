@@ -3,7 +3,7 @@ import { Crown } from 'lucide-react'
 
 export const AppDemoCard = () => {
   return (
-    <div className="max-w-full flex flex-col bg-white rounded-lg p-8">
+    <div className="max-w-full flex flex-col bg-white rounded-lg p-8" id='premium'>
         <div className='max-w-6xl self-center ml-28'>
             <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12">
                 
