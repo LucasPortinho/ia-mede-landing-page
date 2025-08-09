@@ -21,8 +21,8 @@ const Card = ({ imgPath, title, description }: CardProps) => {
         alt={title}
       />
       <div className='absolute bottom-4 sm:bottom-5 lg:bottom-6 left-4 sm:left-5 lg:left-6 right-4 sm:right-5 lg:right-6'>
-        <h4 className="text-black font-[Roboto] font-bold text-lg sm:text-xl lg:text-2xl mb-1 sm:mb-2">{title}</h4>
-        <p className="text-black/70 font-[Roboto] text-sm sm:text-base leading-relaxed">
+        <h4 className="text-black font-bold text-lg sm:text-xl lg:text-2xl mb-1 sm:mb-2">{title}</h4>
+        <p className="text-black/70 text-sm sm:text-base leading-relaxed">
           {description}
         </p>
       </div>

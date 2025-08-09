@@ -44,17 +44,17 @@ export const MainSection = ({ inputRef }: { inputRef: React.RefObject<HTMLInputE
 
     return (
     <>
-        <div className="max-w-full mx-auto bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 py-12 sm:py-16 lg:py-20" id="hero-section">
+        <div className="max-w-full mx-auto mt-10 sm:mt-0 bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 py-12 sm:py-16 lg:py-20" id="hero-section">
 
         <div className="flex flex-col lg:flex-row items-center bg-gray-100 rounded-xl p-4 sm:p-6 lg:p-4">
 
           
           {/* Center - Content */}
           <div className="flex-1 space-y-3 sm:space-y-4 flex flex-col text-center items-center px-4">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-[Roboto] text-blue-600 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-blue-600 leading-tight">
               IA.MEDE
             </h1>
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-[Roboto] text-blue-600 leading-tight -mt-2">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue-600 leading-tight -mt-2">
               Agente financeiro feito para médicos
             </h1>
             <span className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl">

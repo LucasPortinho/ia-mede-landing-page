@@ -4,7 +4,7 @@ import { Crown } from 'lucide-react'
 export const AppDemoCard = () => {
   return (
     <div className="max-w-full flex flex-col bg-white rounded-lg p-8" id='premium'>
-        <div className='max-w-6xl self-center ml-28'>
+        <div className='max-w-6xl self-center lg:ml-28'>
             <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12">
                 
                 {/* Left Content */}
@@ -18,7 +18,7 @@ export const AppDemoCard = () => {
                     Organize os<br />
                     seus plantões.
                     </h2>
-                    <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+                    <p className="text-gray-600 text-lg leading-relaxed max-w-sm">
                         Utilize da nossa ferramenta para organizar suas finanças do dia a dia, como plantões, investimentos, gastos e parcelas.
                     </p>
                 </div>
@@ -69,7 +69,7 @@ export const AppDemoCard = () => {
 
                 {/* Right Phone Mockup */}
                 <div className="flex-shrink-0">
-                    <div className="relative w-160 h-120" >
+                    <div className="relative w-80 h-80 lg:w-160 lg:h-120" >
                         <img src={ChatPng} />
                     </div>
                 </div>
